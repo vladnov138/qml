@@ -14,10 +14,8 @@ Window {
         MyRect {
             Layout.fillWidth: true
             Layout.preferredHeight: 50
-            compColor: "lightgray"
+            compColor: "#7375D8"
             compText: "Header"
-            border.width: 2
-            compBorderColor: "gray"
         }
 
         Item {
@@ -27,8 +25,6 @@ Window {
                 compWidth: parent.width * 0.9
                 compHeight: parent.height
                 anchors.centerIn: parent
-                border.width: 2
-                compBorderColor: "gray"
                 color: "#FFF"
                 compText: "Content"
             }
@@ -37,23 +33,21 @@ Window {
         RowLayout {
             Layout.preferredHeight: 50
             Layout.fillWidth: true
-            spacing: 1
+            spacing: 5
 
             MyRect {
                 Layout.fillWidth: true
                 Layout.preferredHeight: 50
                 Layout.alignment: Qt.AlignBottom
-                border.width: 2
-                compBorderColor: "gray"
-                compText: "5"
+                compColor: "#7375D8"
+                compText: "1"
             }
 
             MyRect {
                 Layout.fillWidth: true
                 Layout.preferredHeight: 50
                 Layout.alignment: Qt.AlignBottom
-                border.width: 2
-                compBorderColor: "gray"
+                compColor: "#7375D8"
                 compText: "2"
             }
 
@@ -61,8 +55,7 @@ Window {
                 Layout.fillWidth: true
                 Layout.preferredHeight: 50
                 Layout.alignment: Qt.AlignBottom
-                border.width: 2
-                compBorderColor: "gray"
+                compColor: "#7375D8"
                 compText: "3"
             }
         }
