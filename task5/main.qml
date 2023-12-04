@@ -66,7 +66,7 @@ Window {
                     PropertyChanges { target: btn3; color: "lightblue"; opacity: 0.4 }
                     PropertyChanges { target: header; compText: "Header 1" }
                     PropertyChanges { target: content; compText: "Item 1 content" }
-                    PropertyChanges { target: back; opacity: 1 }
+                    PropertyChanges { target: back; opacity: 0 }
                 },
                 State {
                     name: "btn2"
