@@ -58,8 +58,45 @@ Window {
             state: ""
             spacing: 5
 
+            states: [
+                State {
+                    name: "btn1"
+                    PropertyChanges { target: btn1; color: "cyan"; opacity: 1 }
+                    PropertyChanges { target: btn2; color: "lightblue"; opacity: 0.4 }
+                    PropertyChanges { target: btn3; color: "lightblue"; opacity: 0.4 }
+                    PropertyChanges { target: header; compText: "Header 1" }
+                    PropertyChanges { target: content; compText: "Item 1 content" }
+                    PropertyChanges { target: back; opacity: 1 }
+                },
+                State {
+                    name: "btn2"
+                    PropertyChanges { target: btn1; color: "lightblue"; opacity: 0.4 }
+                    PropertyChanges { target: btn2; color: "cyan"; opacity: 1 }
+                    PropertyChanges { target: btn3; color: "lightblue"; opacity: 0.4 }
+                    PropertyChanges { target: header; compText: "Header 2";  }
+                    PropertyChanges { target: content; compText: "Item 2 content" }
+                    PropertyChanges { target: back; opacity: 1}
+                },
+                State {
+                    name: "btn3"
+                    PropertyChanges { target: btn1; color: "lightblue"; opacity: 0.4 }
+                    PropertyChanges { target: btn2; color: "lightblue"; opacity: 0.4 }
+                    PropertyChanges { target: btn3; color: "cyan"; opacity: 1 }
+                    PropertyChanges { target: header; compText: "Header 3" }
+                    PropertyChanges { target: content; compText: "Item 3 content" }
+                    PropertyChanges { target: back; opacity: 1}
+                }
+            ]
+
+            transitions: [
+                Transition {
+                    ColorAnimation { properties: "color"; duration: 500 }
+                }
+            ]
+
             MyRect {
                 id: btn1
+                opacity: 0.8
                 Layout.fillWidth: true
                 Layout.preferredHeight: 50
                 Layout.alignment: Qt.AlignBottom
@@ -77,44 +114,9 @@ Window {
                 }
             }
 
-            states: [
-                State {
-                    name: "btn1"
-                    PropertyChanges { target: btn1; color: "cyan" }
-                    PropertyChanges { target: btn2; color: "lightblue"; opacity: 0.4 }
-                    PropertyChanges { target: btn3; color: "lightblue"; opacity: 0.4 }
-                    PropertyChanges { target: header; compText: "Header 1" }
-                    PropertyChanges { target: content; compText: "Item 1 content" }
-                    PropertyChanges { target: back; opacity: 1 }
-                },
-                State {
-                    name: "btn2"
-                    PropertyChanges { target: btn1; color: "lightblue"; opacity:0.4 }
-                    PropertyChanges { target: btn2; color: "cyan" }
-                    PropertyChanges { target: btn3; color: "lightblue"; opacity:0.4 }
-                    PropertyChanges { target: header; compText: "Header 2";  }
-                    PropertyChanges { target: content; compText: "Item 2 content" }
-                    PropertyChanges { target: back; opacity: 1}
-                },
-                State {
-                    name: "btn3"
-                    PropertyChanges { target: btn1; color: "lightblue"; opacity:0.4 }
-                    PropertyChanges { target: btn2; color: "lightblue"; opacity:0.4 }
-                    PropertyChanges { target: btn3; color: "cyan" }
-                    PropertyChanges { target: header; compText: "Header 3" }
-                    PropertyChanges { target: content; compText: "Item 3 content" }
-                    PropertyChanges { target: back; opacity: 1}
-                }
-            ]
-
-            transitions: [
-                Transition {
-                    ColorAnimation { properties: "color"; duration: 500 }
-                }
-            ]
-
             MyRect {
                 id: btn2
+                opacity: 0.8
                 Layout.fillWidth: true
                 Layout.preferredHeight: 50
                 Layout.alignment: Qt.AlignBottom
@@ -134,6 +136,7 @@ Window {
 
             MyRect {
                 id: btn3
+                opacity: 0.8
                 Layout.fillWidth: true
                 Layout.preferredHeight: 50
                 Layout.alignment: Qt.AlignBottom
