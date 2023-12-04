@@ -9,5 +9,6 @@
 появление стрелки
 «Назад»
 ## Демонстрация
-![image](https://github.com/vladnov138/qml/assets/113700660/c73af8e5-538b-4bee-9bfb-4e48a1dd9019)
-![image](https://github.com/vladnov138/qml/assets/113700660/13921119-69ea-43ad-825c-3a5f4ae60545)
+![image](https://github.com/vladnov138/qml/assets/113700660/5dfd044f-4b4b-48b5-a8be-2f75705d5f2e)
+![image](https://github.com/vladnov138/qml/assets/113700660/e61dab67-07a2-49f3-969e-eb46fc9ce0b7)
+
