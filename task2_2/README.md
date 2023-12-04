@@ -4,4 +4,5 @@
 Написать код.
 Внести свои предложения и правки в макет. 
 ## Демонстрация
-![image](https://github.com/vladnov138/qml/assets/113700660/86ecd576-fb17-49a1-8729-58791bf7e3f1)
+![image](https://github.com/vladnov138/qml/assets/113700660/0b685ab6-ee79-4f2a-b439-bb8ed541aadc)
+
